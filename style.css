@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #123456, #789abc),#def012;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.main-div {
+    height: 600px;
+    width: 330px;
+    margin: 30px auto;
+    padding: 10px;
+    position: relative;
+    background: linear-gradient(to right, #222,#333);
+    border: 5px solid honeydew;
+    border-radius: 30px;
+    animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+    from 
+    {
+        transform: scale(0.5);
+        opacity: 0.5;
+    } 
+    to 
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.screen {
+    height: 100px;
+    width: 100%;
+    background: #2c3e50;
+    font-size: 33px;
+    text-align: right;
+    border-radius: 20px;
+    line-height: 100px;
+    padding: 0 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.clear {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 543px;
+    right: 0;
+    background: linear-gradient(to top, #678123, #4590ab);
+    border-radius: 15px 15px 25px 25px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+}
+
+.clear:hover {
+    background: radial-gradient(849px at 0.9% 42.8%, rgba(255, 157, 255, 1) 0%, rgb(255, 102, 142) 43.3%, rgb(255, 31, 56) 83.1%);
+}
+
+.number-div {
+    padding: 30px 20px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.number-div li {
+    flex: 22%;
+    height: 65px;
+    width: 20px;
+    background: #444;
+    margin: 15px 2px;
+    text-align: center;
+    line-height: 65px;
+    border-radius:  50%;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    transition: border 0.4s ease-in-out;
+}
+
+.number-div li:hover {
+    border: 2px solid darkgoldenrod;
+}
+
+.number-div .math {
+    background-color: darkgrey;
+}
+
+#equal {
+    background-color: #4590ab;
+}
